@@ -1,0 +1,192 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #b41d57cc;
+}
+
+.img {
+  width: 85%;
+  height: 120vh;
+}
+
+.bg {
+  width: 100%;
+  height: 120vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-image: linear-gradient(180deg, #fff3 30%, #b41d57cc 70%);
+}
+
+.info {
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.Arrow {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.text {
+  width: 90rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.infoHead {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.infoBtn {
+  border: 1px solid #fff;
+  padding: 0.5rem 3rem;
+  color: #fff;
+  background-color: #b41d57cc;
+}
+
+.arrowBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #b41d57cc;
+  border: none;
+  padding: 0 1rem;
+}
+
+/* Styles for mobile devices */
+
+@media only screen and (max-width: 767px) {
+  .Arrow {
+    top: 6px;
+    left: 3px;
+  }
+
+  .info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 40rem;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .bg {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .text {
+    width: 30rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .listContainer {
+    grid-template-columns: repeat(1, 30rem);
+    padding: 1rem 0 1rem 0;
+  }
+}
+
+/* Styles for tablet devices */
+
+@media only screen and (min-width: 768px) {
+  .Arrow {
+    left: 0;
+  }
+
+  .text {
+    width: 40rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .arrowBtn {
+    padding: 0 5px;
+  }
+
+  .info {
+    gap: 2rem;
+  }
+}
+
+/* Styles for desktop devices */
+
+@media only screen and (min-width: 1024px) {
+  .Arrow {
+    left: 0;
+  }
+
+  .text {
+    width: 62rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .info {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .Arrow {
+    left: 1%;
+  }
+
+  .text {
+    width: 95rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  .listContainer {
+    grid-template-columns: repeat(6, 25rem);
+  }
+}
