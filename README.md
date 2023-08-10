@@ -84,7 +84,7 @@ After you're finished please remove all the comments and instructions!
 
 >
 
-- [Live Demo]()
+- [Live Demo](https://popcornflex.netlify.app/)
 - [Loom](https://www.loom.com/share/63b6df6ef21a44ccaea85bf634e91d32?sid=bb8583e0-9601-42c5-a1d6-9c542e161de1)
 
 <!-- GETTING STARTED -->
