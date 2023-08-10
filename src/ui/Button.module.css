@@ -1,0 +1,25 @@
+.btn {
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid #fc5193;
+  background-color: #fc5193;
+}
+
+.btn:hover {
+  border: 1px solid #fff;
+  background-color: #d34d81;
+}
+
+@media only screen and (max-width: 767px) {
+  .btn {
+    padding: 2rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .btn {
+    padding: 1rem 1rem;
+  }
+}

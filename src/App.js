@@ -1,17 +1,20 @@
+import React, { useEffect } from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import HomePage from './pages/HomePage';
 import './App.css';
+import { fetchMovies } from './redux/movie/movieSlice';
+import MovieDetails from './components/MovieDetails';
+import PageNav from './components/PageNav';
 
 function Layout() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchMovies());
+  }, [dispatch]);
   return (
     <>
-      <ul className="">
-        <li>
-          <a to="/">Home</a>
-        </li>
-        <li>
-          <a to="/about">About</a>
-        </li>
-      </ul>
+      <PageNav />
       <Outlet />
     </>
   );
@@ -21,9 +24,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<h1>Hello world!</h1>} />
-        <Route path="about" element={<div>About page</div>} />
-        <Route path="*" element={<div>If page not found it goes here</div>} />
+        <Route index element={<HomePage />} />
+        <Route path="/movie/:movieId" element={<MovieDetails />} />
+        <Route path="*" element={<div>page not found it goes here</div>} />
       </Route>
     </Routes>
   );
