@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Movie.js should display movie form the data 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <a
+        href="/movie/undefined"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="icon"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              height="24px"
+              stroke="#fff"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              width="24px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <img
+            alt="the big bang theory"
+            class="img"
+          />
+          <div
+            class="info"
+          >
+            <p
+              class="title"
+            >
+              the big bang theory
+            </p>
+            <p
+              class="year"
+            >
+              2007-01-11 - 30min
+            </p>
+            <p
+              class="rating"
+            >
+              Rating / 8
+            </p>
+            <button
+              class="movieBtn"
+              type="button"
+            />
+          </div>
+        </div>
+      </a>
+    </div>
+  </body>,
+  "container": <div>
+    <a
+      href="/movie/undefined"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="icon"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            height="24px"
+            stroke="#fff"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            width="24px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <img
+          alt="the big bang theory"
+          class="img"
+        />
+        <div
+          class="info"
+        >
+          <p
+            class="title"
+          >
+            the big bang theory
+          </p>
+          <p
+            class="year"
+          >
+            2007-01-11 - 30min
+          </p>
+          <p
+            class="rating"
+          >
+            Rating / 8
+          </p>
+          <button
+            class="movieBtn"
+            type="button"
+          />
+        </div>
+      </div>
+    </a>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
