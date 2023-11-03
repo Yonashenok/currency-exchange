@@ -1,0 +1,64 @@
+.listContainer {
+  margin: 3rem auto;
+  padding: 2rem 4rem 2rem 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.header {
+  margin: 2rem 0 0 0;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+/* Styles for mobile devices */
+
+@media only screen and (max-width: 767px) {
+  .listContainer {
+    grid-template-columns: repeat(2, 25rem);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .listContainer {
+    grid-template-columns: repeat(1, 30rem);
+    padding: 1rem 0 1rem 0;
+  }
+}
+
+/* Styles for tablet devices */
+
+@media only screen and (min-width: 768px) {
+  .listContainer {
+    grid-template-columns: repeat(3, 20rem);
+    column-gap: 5rem;
+    row-gap: 1rem;
+  }
+}
+
+/* Styles for desktop devices */
+
+@media only screen and (min-width: 1024px) {
+  .listContainer {
+    grid-template-columns: repeat(4, 25rem);
+    padding: 1rem 0 1rem 0;
+    column-gap: 0.1rem;
+    row-gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .listContainer {
+    grid-template-columns: repeat(5, 25rem);
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  .listContainer {
+    grid-template-columns: repeat(6, 25rem);
+  }
+}

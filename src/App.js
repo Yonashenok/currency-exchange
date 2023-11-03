@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { Routes, Route, Outlet } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import HomePage from './pages/HomePage';
 import './App.css';
+import { fetchMovies } from './redux/movie/movieSlice';
+import MovieDetails from './components/MovieDetails';
+import PageNav from './components/PageNav';
+
+function Layout() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchMovies());
+  }, [dispatch]);
+  return (
+    <>
+      <PageNav />
+      <Outlet />
+    </>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="/movie/:movieId" element={<MovieDetails />} />
+        <Route path="*" element={<div>page not found it goes here</div>} />
+      </Route>
+    </Routes>
   );
 }
 

@@ -1,0 +1,39 @@
+.pageContainer {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10rem;
+  background-color: #b41d57;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .pageContainer {
+    padding: 0 1rem;
+  }
+}
